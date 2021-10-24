@@ -1,7 +1,18 @@
+function formatMask() {
+    IMask(
+        document.getElementById("bd"),
+        {
+            mask: Date,
+            min: new Date(1900, 0, 1),
+            max: new Date(),
+            lazy: false
+        });
+}
+
 function calcMatrix() {
     let matrix = {};
     const date = document.querySelector("#bd").value;
-    const [year, month, day] = date.split("-").map(i => Number(i));
+    const [day, month, year] = date.split(".").map(i => Number(i));
 
     const numArr = num => num.toString().split('').map(i => Number(i));
     const energy3 = year => sum22(numArr(year).reduce((i, g) => i + g));
