@@ -1,0 +1,253 @@
+html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+        no-repeat;
+    background-size: 400% 800%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@font-face {
+    font-family: "ALS Schlange Sans";
+    src: url("fonts/font.eot");
+    src: url("fonts/font.eot?#iefix") format("embedded-opentype"),
+        url("fonts/font.woff") format("woff"),
+        url("fonts/font.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    position: relative;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "ALS Schlange Sans", sans-serif;
+    line-height: 25px;
+    font-weight: normal;
+    color: #313131;
+    text-decoration: none;
+}
+
+.main {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 36px;
+}
+
+.bd_form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px;
+}
+
+.bd_form label {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+.bd_form .btn {
+    margin: 8px;
+}
+
+.matrix_block {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+}
+
+.show {
+    display: block;
+    animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.numbers div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: 17px;
+    height: 17px;
+    font-size: 16px;
+    color: #000;
+}
+
+.numbers div.w25 {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+}
+
+.numbers div.white {
+    color: #fff;
+}
+
+#c1 {
+    left: 18px;
+    top: 234px;
+}
+
+#c2 {
+    left: 235px;
+    top: 18px;
+}
+
+#c3 {
+    top: 234px;
+    left: 453px;
+}
+
+#c4 {
+    left: 235px;
+    top: 452px;
+}
+
+#c5 {
+    left: 80px;
+    top: 79px;
+}
+
+#c6 {
+    left: 391px;
+    top: 79px;
+}
+
+#c7 {
+    left: 391px;
+    top: 390px;
+}
+
+#c8 {
+    left: 80px;
+    top: 390px;
+}
+
+#c9 {
+    left: 226px;
+    top: 222px;
+}
+
+#c10 {
+    left: 226px;
+    top: 249px;
+}
+
+#c11 {
+    left: 254px;
+    top: 233px;
+}
+
+#c12 {
+    left: 239px;
+    top: 116px;
+}
+
+#c13 {
+    left: 117px;
+    top: 238px;
+}
+
+#c14 {
+    left: 179px;
+    top: 178px;
+}
+
+#c15 {
+    left: 239px;
+    top: 78px;
+}
+
+#c16 {
+    left: 79px;
+    top: 238px;
+}
+
+#c17 {
+    left: 239px;
+    top: 361px;
+}
+
+#c18 {
+    left: 361px;
+    top: 238px;
+}
+
+#c19 {
+    left: 299px;
+    top: 299px;
+}
+
+#c20 {
+    left: 239px;
+    top: 400px;
+}
+
+#c21 {
+    left: 398px;
+    top: 238px;
+}
+
+#c22 {
+    left: 321px;
+    top: 319px;
+}
+
+table {
+    text-align: center;
+    width: 500px;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+table th.fixed {
+    width: 120px;
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 0 5px;
+}

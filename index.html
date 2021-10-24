@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матрица души</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="bd_form">
+            <form class="form-group" onkeyup="clear()">
+                <label for="bd">Ваша дата рождения</label>
+                <input type="date" id="bd" min="1900-01-01" value="1980-01-01" class="form-control" />
+            </form>
+            <button id="calcBtn" type="button" class="btn btn-primary" onclick="calcMatrix()">Рассчитать</button>
+        </div>
+
+        <div class="matrix_block">
+            <img alt="matrix" src="calc.png"></img>
+            <div class="numbers">
+                <div class="w25 white" id="c1"></div>
+                <div class="w25 white" id="c2"></div>
+                <div class="w25 white" id="c3"></div>
+                <div class="w25 white" id="c4"></div>
+                <div class="w25" id="c5"></div>
+                <div class="w25" id="c6"></div>
+                <div class="w25" id="c7"></div>
+                <div class="w25" id="c8"></div>
+                <div class="w25" id="c9"></div>
+                <div class="w25" id="c10"></div>
+                <div class="w25" id="c11"></div>
+                <div class="white" id="c12"></div>
+                <div class="white " id="c13"></div>
+                <div id="c14"></div>
+                <div class="white" id="c15"></div>
+                <div class="white" id="c16"></div>
+                <div id="c17"></div>
+                <div id="c18"></div>
+                <div id="c19"></div>
+                <div id="c20"></div>
+                <div id="c21"></div>
+                <div id="c22"></div>
+            </div>
+        </div>
+
+        <table id="table" class="">
+            <thead>
+                <tr>
+                    <th>Чакры</th>
+                    <th class="fixed">Линия Земли</th>
+                    <th class="fixed">Линия Неба</th>
+                    <th class="fixed">Энергия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #cb65ff">
+                    <td class="name">Сахасрара</td>
+                    <td id="c1"></td>
+                    <td id="c2"></td>
+                    <td id="c5"></td>
+                </tr>
+                <tr style="background-color: #39f">
+                    <td class="name">Аджна</td>
+                    <td id="c16"></td>
+                    <td id="c15"></td>
+                    <td id="c6"></td>
+                </tr>
+                <tr style="background-color: #99cbff">
+                    <td class="name">Аджна</td>
+                    <td id="c13"></td>
+                    <td id="c12"></td>
+                    <td id="c14"></td>
+                </tr>
+                <tr style="background-color: #6bda6b">
+                    <td class="name">Анахата</td>
+                    <td id="c11"></td>
+                    <td id="c9"></td>
+                    <td id="c10"></td>
+                </tr>
+                <tr style="background-color:#fefdae">
+                    <td class="name">Манипура</td>
+                    <td id="c18"></td>
+                    <td id="c17"></td>
+                    <td id="c19"></td>
+                </tr>
+                <tr style="background-color:#ffcb99">
+                    <td class="name">Свадхистана</td>
+                    <td id="c21"></td>
+                    <td id="c20"></td>
+                    <td id="c22"></td>
+                </tr>
+                <tr style="background-color:#ff6565">
+                    <td class="name">Муладхара</td>
+                    <td id="c3"></td>
+                    <td id="c4"></td>
+                    <td id="c7"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
