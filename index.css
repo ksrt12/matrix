@@ -251,3 +251,14 @@ table td {
     border: 1px solid black;
     padding: 0 5px;
 }
+
+@media (orientation: portrait) {
+    .main {
+        margin: 0;
+        left: 0;
+        right: 0;
+    }
+    body {
+        width: auto;
+    }
+}
