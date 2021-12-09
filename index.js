@@ -4,7 +4,7 @@ function formatMask() {
         {
             mask: Date,
             min: new Date(1900, 0, 1),
-            max: new Date(),
+            max: new Date(2100, 0, 1),
             lazy: false
         });
 }
