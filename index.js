@@ -46,6 +46,10 @@ function calcMatrix() {
     matrix.c20 = sum22(matrix.c4 + matrix.c17);
     matrix.c21 = sum22(matrix.c3 + matrix.c18);
     matrix.c22 = sum22(matrix.c21 + matrix.c20);
+    matrix.c23 = sum22(matrix.c16 + matrix.c15);
+    matrix.c24 = sum22(matrix.c10 + matrix.c9);
+
+    console.log(matrix);
 
     Object.keys(matrix).forEach(i => document.querySelectorAll(`#${i}`).forEach(j => j.innerText = matrix[i]));
     document.querySelector(".numbers").classList.add("show");
